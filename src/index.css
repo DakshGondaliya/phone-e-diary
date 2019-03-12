@@ -1,14 +1,28 @@
+@font-face {
+  font-family: GoogleSans-Regular;
+  src: url("./font/GoogleSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: GoogleSans-Medium;
+  src: url("./font/GoogleSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: GoogleSans-MediumItalic;
+  src: url("./font/GoogleSans-MediumItalic.ttf");
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "GoogleSans-Regular", Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to bottom, #121e3d 0%, #000 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+/*121e3d*/
