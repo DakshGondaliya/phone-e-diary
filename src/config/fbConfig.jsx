@@ -1,11 +1,11 @@
 import firebase from "firebase";
 var config = {
-  apiKey: "AIzaSyCbixkqPpE8zrHrJeJtpFiv3l8h8FhRqv8",
-  authDomain: "phonedirectory-cf402.firebaseapp.com",
-  databaseURL: "https://phonedirectory-cf402.firebaseio.com",
-  projectId: "phonedirectory-cf402",
-  storageBucket: "phonedirectory-cf402.appspot.com",
-  messagingSenderId: "1004885701681"
+  apiKey: "AIzaSyDAzShVmHWJzMOJvi1UWoaQKTqzHBhXtBA",
+  authDomain: "phone-e-diary.firebaseapp.com",
+  databaseURL: "https://phone-e-diary.firebaseio.com",
+  projectId: "phone-e-diary",
+  storageBucket: "phone-e-diary.appspot.com",
+  messagingSenderId: "38757835320"
 };
 firebase.initializeApp(config);
 

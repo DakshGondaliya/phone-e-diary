@@ -62,47 +62,34 @@ class App extends Component {
     const {
       length: count
     } = this.state.subscribers;
-    return ( <
-      React.Fragment >
-      <
-      div className = "container" >
-      <
-      div >
-      <
-      img className = "logo"
+    return ( <React.Fragment>
+      <div className = "container">
+      <div>
+      <img className = "logo"
       src = {
         image
       }
-      alt = "logo" / >
-      <
-      h1 > phone - e - diary < /h1> <
-      form onSubmit = {
+      alt = "logo" />
+      <h1> phone-e-diary </h1> 
+      <form onSubmit = {
         this.handleSubmit
-      } >
-      <
-      div className = "form-group"
-      id = "spc-1" >
-      <
-      div className = "input-1" >
-      <
-      i className = "fa fa-user" / >
-      <
-      input type = "text"
+      }>
+      <div className = "form-group"
+      id = "spc-1">
+      <div className = "input-1">
+      <i className = "fa fa-user" />
+      <input type = "text"
       className = "form-control"
       ref = "username"
       placeholder = "Your name"
       required /
-      >
-      <
-      /div> < /
-      div > <
-      div className = "form-group" >
-      <
-      div className = "input-1" >
-      <
-      i className = "fa fa-phone" / >
-      <
-      input type = "number"
+     >
+      </div> 
+      </div> 
+      <div className = "form-group">
+      <div className = "input-1">
+      <i className = "fa fa-phone" />
+      <input type = "number"
       className = "form-control"
       minLength = "10"
       maxLength = "10"
@@ -110,73 +97,61 @@ class App extends Component {
       ref = "phone_number"
       placeholder = "Your phone number"
       required /
-      >
-      <
-      /div> < /
-      div > <
-      button type = "submit"
-      className = "btn btn-primary" >
-      Add <
-      /button> < /
-      form > <
-      /div> < /
-      div > {
-        this.state.loading ? ( <
-          div className = "gif" >
-          <
-          img src = {
+     >
+      </div> 
+      </div> 
+      <button type = "submit"
+      className = "btn btn-primary">
+      Add 
+      </button> 
+      </form> 
+      </div> 
+      </div> {
+        this.state.loading ? ( 
+          <div className = "gif">
+          <img src = {
             gif
           }
-          alt = "gif" / >
-          <
-          /div>
-        ) : count === 0 ? ( <
-          p className = "gif" > There is no subscriber in the Database < /p>
-        ) : ( <
-          div className = "list" >
-          <
-          table className = "table" >
-          <
-          thead >
-          <
-          tr id = "tablehead" >
-          <
-          th id = "name" > Name < /th> <
-          th id = "phone" > Phone Number < /th> <
-          th id = "null" / >
-          <
-          /tr> < /
-          thead > <
-          tbody > {
-            this.state.subscribers.map(subscriber => ( <
-              tr key = {
+          alt = "gif" />
+          </div>
+        ) : count === 0 ? ( 
+          <p className = "gif"> There is no subscriber in the Database </p>
+        ) : (
+          <div className="list">
+          <table className = "table">
+          <thead>
+          <tr id = "tablehead">
+          <th id = "name"> Name </th>
+          <th id = "phone"> Phone Number </th>
+          <th id = "null" />
+          </tr>
+          </thead>
+          <tbody>{
+            this.state.subscribers.map(subscriber => ( 
+              <tr key = {
                 subscriber.key
-              } >
-              <
-              td className = "user" > {
+              }>
+              <td className = "user"> {
                 subscriber.username
-              } < /td> <
-              td className = "mobno" > {
+              } </td> 
+              <td className = "mobno"> {
                 subscriber.phone_number
-              } < /td> <
-              td >
-              <
-              button className = "delete--button"
+              } </td> 
+              <td>
+              <button className = "delete--button"
               onClick = {
                 () => this.deleteSubscriber(subscriber)
-              } >
-              Delete <
-              /button> < /
-              td > <
-              /tr>
+              }>
+              Delete </button> 
+              </td> 
+              </tr>
             ))
-          } <
-          /tbody> < /
-          table > <
-          /div>
+          } 
+          </tbody> 
+          </table> 
+          </div>
         )
-      } <
-      /React.Fragment>
+      } </React.Fragment>
     );
   }
 }
